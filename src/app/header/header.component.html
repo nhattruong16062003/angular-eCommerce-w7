@@ -1,0 +1,14 @@
+<!-- Thêm vào <head> của index.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<header class="header">
+    <div class="container">
+        <h1 class="logo">ShopApp</h1>
+        <nav>
+            <a routerLink="/cart" routerLinkActive="active" class="cart-link" style="color: white;">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" style="text-decoration: none;">{{ cartItemsCount$ |
+                    async }}</span>
+            </a>
+        </nav>
+    </div>
+</header>
